@@ -44,7 +44,7 @@ function convertValue(){
     if (fromUnit == "centimeter1" && toUnit == "meter2"){
         answer =  fromValue * 0.01; 
     } else if (fromUnit == "centimeter1" && toUnit == "kilometer2"){
-        answer = fromValue * 0.00001;
+        answer = fromValue / 100000;
     } else if (fromUnit == "centimeter1" && toUnit == "centimeter2"){
         answer = fromValue * 1;
     } else if (fromUnit == "centimeter1" && toUnit == "feet2"){
