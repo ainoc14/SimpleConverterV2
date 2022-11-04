@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    height: 100vh;
+    background: linear-gradient(to right bottom, #1b9dc2, #031f6a)
+
+}
+.mainContainer{
+    background-color: beige;
+    /* width: 250px; */
+    width: 65%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 300px auto;
+    text-align: center;
+    box-shadow: 2px 2px 5px 15px gray;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+.mainContainer h1{
+    font-size: 40px;
+    padding-top: 50px;
+}
+.mainContainer>div{
+    display: flex;
+}
+.mainContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mainContainer div{
+    padding: 40px;
+}
+.mainContainer i{
+    font-size: 30px;
+}
+.fa-arrow-down{
+    display: none;
+}
+input,select{
+    width: 200px;
+    border: 2px solid gray;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 15px;
+}
+input{
+    background-color: white;
+}
+select{
+    background: rgb(241, 74, 74);
+    color: whitesmoke;
+}
+@media (max-width: 1023px){
+    .mainContainer{
+        width: 500px;
+        height: auto;
+    }
+    .mainContainer>div{
+        flex-direction: column;
+    }
+    .mainContainer h1{
+        padding-top: 30px;
+    }
+    .mainContainer div{
+        padding: 20px;
+    }
+    input,select{
+        width: 180px;
+    }
+    .fa-arrow-down{
+        display: block;
+    }
+    .fa-arrow-right{
+        display: none;
+    }
+}
+@media (max-width: 600px){
+    .mainContainer{
+        width: 250px;
+    }
+}
